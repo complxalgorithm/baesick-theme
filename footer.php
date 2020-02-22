@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage WP-Skeleton
+ * @subpackage Baesick-Theme
  */
 ?>
   <div class="clear"></div>

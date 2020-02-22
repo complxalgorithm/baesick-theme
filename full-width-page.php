@@ -4,7 +4,7 @@
  * Description: A full-width template with no sidebar
  *
  * @package WordPress
- * @subpackage WP-Skeleton
+ * @subpackage Baesick-Theme
  */
 
 get_header(); 

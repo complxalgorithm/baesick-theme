@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage WP-Skeleton
+ * @subpackage Baesick-Theme
  */
 ?>
 <?php get_template_part( 'index', 'single' ); ?> 
