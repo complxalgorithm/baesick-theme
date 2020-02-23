@@ -13,7 +13,143 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* VARIABLES */
+
+
 /* GENERAL STYLES */
+body {
+    overflow-x: hidden;
+    width: 98.5%;
+    margin: auto !important;
+    
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        
+        .container-fluid {
+            padding: 10px;
+            width: 100%;
+        }
+    }
+}
+
+.section {
+    .sec-header { /* header of each section */
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .row {
+        margin-top: 35px;
+    }
+}
+
+.soc-pad {
+    padding: 0 5px;
+}
+
 .seo-icon {
     display: none;
+}
+
+a {
+    color: dimgray !important;
+    
+    &.btn {
+        text-decoration: none !important;
+        color: white !important;
+    }
+}
+
+/* TOP-BAR */
+.top-bar {
+    border-bottom: 1px solid black;
+    height: auto;
+}
+
+/* NAV AND MENU */
+.menu-main-menu-container {
+    ul.menu {
+        li.menu-item {
+            padding: 0 25px !important;
+            
+            a {
+                
+            }
+        }
+    }
+}
+
+/* HERO */
+.hero-section {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    
+    .hero-text {
+        background-color: rgba(255,255,255,0.65);
+        border-radius: 25px;
+        margin: 15% auto;
+        
+        h1 {
+            font-size: 3.25rem;
+            padding: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: 10px;
+            
+            a {
+                font-size: 2rem !important;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+/* MAIN CONTENT */
+.about-section {
+    .row {
+        .col-md-6 {
+            .about-img {
+                padding-right: 5px;
+                
+                img {
+                    float: right;
+                }
+            }
+            
+            .about-text {
+                padding-left: 5px;
+                float: left;
+                min-width: 80%;
+                margin-top: 10%;
+                
+                p {
+                    a {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+.footer {
+    .container {
+        .row {
+            
+        }
+        
+        .footer-copyright {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    }
 }
