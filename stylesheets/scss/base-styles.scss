@@ -14,17 +14,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* FONTS */
-// ------- IMPORT FONTS HERE ------- //
+// ------- IMPORT ADDITIONAL FONTS HERE ------- //
 
 /* VARIABLES */
-$default-font: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
-$header-font: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;;
+$default-font: "Times New Roman", Helvetica, Arial, sans-serif;
+$header-font: "Georgia", Helvetica, Arial, sans-serif;;
 $main-color: dimgray;
 $second-color: black;
 $primary-button-color: #007bff;
 $secondary-button-color: #6c757d;
-$primary-button-hover-color: darken($primary-button-color, 10%);
-$secondary-button-hover-color: darken($secondary-button-color, 10%);
+$primary-hover-color: darken($primary-button-color, 10%);
+$secondary-hover-color: darken($secondary-button-color, 10%);
+$overlay-color1: rgba(255,255,255,0.65);
+$overlay-color2: rgba(0,0,0,0.65);
 
 /* GENERAL STYLES */
 body {
@@ -42,12 +44,38 @@ body {
         }
     }
     
-    h1, h2, h3, h4, h5, a.btn {
+    h1, h2, h3, h4, h5 {
+        font-family: $header-font;
+        font-weight: bolder;
+        color: $second-color;
+    }
+    
+    a.btn {
         font-family: $header-font;
     }
     
     p, a:not(button) {
         font-family: $default-font;
+    }
+    
+    .btn-primary {
+        background-color: $primary-button-color;
+        border-color: $primary-button-color;
+        
+        &:hover {
+            background-color: $primary-hover-color;
+            border-color: $primary-hover-color;
+        }
+    }
+    
+    .btn-secondary {
+        background-color: $secondary-button-color;
+        border-color: $secondary-button-color;
+        
+        &:hover {
+            background-color: $secondary-hover-color;
+            border-color: $secondary-hover-color;
+        }
     }
 }
 
@@ -68,11 +96,11 @@ body {
     }
 }
 
-.soc-pad {
+.soc-pad { /* To create padding between social media icons */
     padding: 0 5px;
 }
 
-.seo-icon {
+.seo-icon { /* To fill the <i> tags without it appearing on screen, for SEO purposes */
     display: none;
 }
 
@@ -98,7 +126,7 @@ a {
             padding: 0 25px !important;
             
             a {
-                
+                color: $main-color !important;
             }
         }
     }
@@ -106,13 +134,13 @@ a {
 
 /* HERO */
 .hero-section {
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.jpg); /* Site's main image */
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
     
     .hero-text {
-        background-color: rgba(255,255,255,0.65);
+        background-color: $overlay-color1;
         border-radius: 25px;
         margin: 15% auto;
         
@@ -133,7 +161,7 @@ a {
 }
 
 /* MAIN CONTENT */
-.about-section {
+.about-section { /* 'About Us' section */
     .row {
         .col-md-6 {
             .about-img {
@@ -161,21 +189,17 @@ a {
 }
 
 /* CTA */
-.cta-section {
+.cta-section { /* 'Call to Action' section */
     height: 325px;
     background-color: black;
     
     .container {
-        .cta-info {
-            background-color: rgba(255,255,255,0.65);
+        .cta-info { /* Container for CTA text & button */
+            background-color: $overlay-color1;
             padding: 15px 25px;
             border-radius: 25px;
             width: 40%;
             margin: 2.5% auto 0;
-            
-            h2 {
-                font-weight: bolder;
-            }
             
             p {
                 padding-top: 15px;
