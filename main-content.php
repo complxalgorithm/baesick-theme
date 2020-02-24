@@ -30,8 +30,4 @@
     <div class="services-section section">
         
     </div>
-    
-    <div class="cta-section section">
-        
-    </div>
 </div><!-- End Content -->

@@ -14,9 +14,23 @@
     
     get_template_part( 'main-content', 'index' ); // the main content
 
-    get_template_part( 'sidebar', 'index' ); // the Sidebar
-            
-    get_footer(); //the Footer 
-   
-?>                        
-           
+    get_template_part( 'cta', 'index' ); // the CTA
+?>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <?php get_template_part( 'loop', 'index' ); ?> <!-- the loop -->
+            </div>
+        
+            <div class="col-md-6 text-center">
+                <?php get_template_part( 'sidebar', 'index' ); ?> <!-- the Sidebar -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php    
+    get_footer(); //the Footer
+?>
