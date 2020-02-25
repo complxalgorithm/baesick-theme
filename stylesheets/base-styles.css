@@ -1,1 +1,96 @@
-body{overflow-x:hidden;width:98.5%;margin:auto !important}body .container{width:100% !important;max-width:100% !important}body .container .container-fluid{padding:10px;width:100%}body h1,body h2,body h3,body h4,body h5{font-family:"Georgia",Helvetica,Arial,sans-serif;font-weight:bolder;color:#000}body a.btn{font-family:"Georgia",Helvetica,Arial,sans-serif}body p,body a:not(button){font-family:"Times New Roman",Helvetica,Arial,sans-serif}body .btn-primary{background-color:#007bff;border-color:#007bff}body .btn-primary:hover{background-color:#0062cc;border-color:#0062cc}body .btn-secondary{background-color:#6c757d;border-color:#6c757d}body .btn-secondary:hover{background-color:#545b62;border-color:#545b62}.section{padding-top:10px;padding-bottom:10px}.section .sec-header{font-size:2rem;text-align:center;font-weight:bolder;padding-top:25px;padding-bottom:25px}.section .row{margin-top:35px}.soc-pad{padding:0 5px}.seo-icon{display:none}a{color:dimgray !important}a.btn{text-decoration:none !important;color:white !important}.top-bar{border-bottom:1px solid black;height:auto}.menu-main-menu-container ul.menu li.menu-item{padding:0 25px !important}.menu-main-menu-container ul.menu li.menu-item a{color:dimgray !important}.hero-section{background-image:url(../images/hero.jpg);background-size:cover;background-repeat:no-repeat;height:80vh}.hero-section .hero-text{background-color:rgba(255,255,255,0.65);border-radius:25px;margin:15% auto}.hero-section .hero-text h1{font-size:3.25rem;padding:20px}.hero-section .hero-text p{font-size:1.5rem;padding:10px}.hero-section .hero-text p a{font-size:2rem !important;margin:20px}.about-section .row .col-md-6 .about-img{padding-right:5px}.about-section .row .col-md-6 .about-img img{float:right}.about-section .row .col-md-6 .about-text{padding-left:5px;float:left;min-width:80%;margin-top:10%}.about-section .row .col-md-6 .about-text p a{margin-top:15px}.cta-section{height:325px;background-color:black}.cta-section .container .cta-info{background-color:rgba(255,255,255,0.65);padding:15px 25px;border-radius:25px;width:40%;margin:2.5% auto 0}.cta-section .container .cta-info p{padding-top:15px}.footer .container .footer-copyright{padding-top:10px;padding-bottom:10px;text-align:center}
+/*
+Theme Name: Baesick-Theme
+File: base-styles
+Theme URI: https://github.com/complxalgorithm/baesick-theme
+Author: complxalgorithm
+Author URI: https://stephensanders.me
+Description: A fork of wyck's WP-Skeleton-Theme - https://github.com/wycks/WP-Skeleton-Theme 
+Version: 1.1
+License: http://www.opensource.org/licenses/mit-license.php.
+Tags: Responsive, grid, mobile, framework, bare-bones, white, minimal
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* FONTS */
+/* VARIABLES */
+/* GENERAL STYLES */
+body { overflow-x: hidden; width: 98.5%; margin: auto !important; }
+
+body .container { width: 100% !important; max-width: 100% !important; }
+
+body .container .container-fluid { padding: 10px; width: 100%; }
+
+body h1, body h2, body h3, body h4, body h5 { font-family: "Georgia", Helvetica, Arial, sans-serif; font-weight: bolder; color: black; }
+
+body a.btn { font-family: "Georgia", Helvetica, Arial, sans-serif; }
+
+body p, body a:not(button) { font-family: "Times New Roman", Helvetica, Arial, sans-serif; }
+
+body .btn-primary { background-color: #007bff; border-color: #007bff; }
+
+body .btn-primary:hover { background-color: #0062cc; border-color: #0062cc; }
+
+body .btn-secondary { background-color: #6c757d; border-color: #6c757d; }
+
+body .btn-secondary:hover { background-color: #545b62; border-color: #545b62; }
+
+.section { padding-top: 20px; psdding-bottom: 20px; }
+
+.section .container .sec-header { /* header of each section */ font-size: 2rem; text-align: center; font-weight: bolder; padding-bottom: 25px; }
+
+.section .container .row { margin-top: 35px; }
+
+.soc-pad { /* To create padding between social media icons */ padding: 0 5px; }
+
+.seo-icon { /* To fill the <i> tags without it appearing on screen, for SEO purposes */ display: none; }
+
+a { color: dimgray !important; }
+
+a.btn { text-decoration: none !important; color: white !important; }
+
+input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !important; }
+
+/* TOP-BAR */
+.top-bar { border-bottom: 1px solid black; height: auto; }
+
+/* NAV AND MENU */
+.menu-main-menu-container ul.menu li.menu-item { padding: 0 25px !important; }
+
+.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; }
+
+/* HERO */
+.hero-section { background-image: url(../images/hero.jpg); /* Site's main image */ background-size: cover; background-repeat: no-repeat; height: 85vh; }
+
+.hero-section .container { height: 85vh; }
+
+.hero-section .container .hero-text { background-color: rgba(255, 255, 255, 0.65); border-radius: 25px; margin: 15% auto; }
+
+.hero-section .container .hero-text h1 { font-size: 3.25rem; padding: 20px; }
+
+.hero-section .container .hero-text p { font-size: 1.5rem; padding: 10px; }
+
+.hero-section .container .hero-text p a { font-size: 2rem !important; margin: 20px; }
+
+/* MAIN CONTENT */
+.about-section { /* 'About Us' section */ }
+
+.about-section .row .col-md-6 .about-img { padding-right: 5px; }
+
+.about-section .row .col-md-6 .about-img img { float: right; }
+
+.about-section .row .col-md-6 .about-text { padding-left: 5px; float: left; min-width: 80%; margin-top: 10%; }
+
+.about-section .row .col-md-6 .about-text p a { margin-top: 15px; }
+
+/* CTA */
+.cta-section { /* 'Call to Action' section */ height: 350px; background-color: black; }
+
+.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 15px 25px; border-radius: 25px; width: 40%; margin: 1.5% auto; }
+
+.cta-section .container .cta-info p { padding-top: 15px; }
+
+/* FOOTER */
+.footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
+
+/* MOBILE/SMALLER SCREEN STYLES */

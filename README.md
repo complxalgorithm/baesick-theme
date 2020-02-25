@@ -1,19 +1,19 @@
-# WP-Skeleton - WordPress Theme
--------------------------------
+# Baesick - Skeleton WordPress Theme
+-------------------------------------
 
-This is a very minimal Bare Bones Responsive WordPress theme based on getskeleton.com
+This is a very minimal responsive [Bootstrap](https://getbootstrap.com/)-based WordPress starter theme forked from wycks' WP-Skeleton-Theme, which itself is based on [Skeleton](https://getskeleton.com).
 
 ### Features:
 
-* Very Easy to customise, it's basically a blank theme.
+* Very Easy to customise.
 * Responsive Media Query Layout
-* Very small footprint: Entire theme is only 55kb
+* Fairly small footprint: Entire theme is roughly 85kb
 * Very small load query, only 15-20 WordPress queries made to the DB by default.
 * Bundled with full 960 based CSS Responsive Grid
+* Bootstrap, jQuery, and Font Awesome support, which can be easily removed from header.php
+* Easily customizable SCSS variables in base-styles.scss file.
 * Icon support for mobile and web
 * IE HTML5shim support
-
-
 
 ### Default 4 layouts:
 - Base 960 Grid       960px
@@ -31,7 +31,7 @@ This is a very minimal Bare Bones Responsive WordPress theme based on getskeleto
 *Widget Support*
  - By default it has a widgitized sidebar and footer.
 
-*Comment, Full Width Page, Author, Search, 404* --> Templates
+*Comment, Full Width Page, Author, Search, Hero, Call-to-Action, Top Bar, 404* --> Templates
 
 Some basic template tags for Site Title, Tagline, Post Meta.
 
@@ -47,7 +47,7 @@ Support for `tag` output in the main loop, I never use tags and they can add to 
 
 Some pages are just handled by the main loop, such as single.php, archives , category, tags, etc.
 
-Snippets have been removed and put into a [gist here](https://gist.github.com/wycks/7013704).
+Snippets have been removed and put into a [gist here](https://gist.github.com/wycks/7013704) by the original developer.
 
 ### Notes
 Stripped out the JavaScript tabs that came with the original HTML Skeleton Framework.
@@ -57,7 +57,7 @@ The footer is left completely unstyled, up to you which grids you want to use, s
 
 To have a left sidebar just move `get_template_part( 'sidebar', 'index' );` to above the loop call (might need minor tweaks).
 
-More grid layout and examples on http://www.getskeleton.com/
+More grid layout and examples on http://www.getskeleton.com/ and https://getbootstrap.com/docs/4.0/examples/
 
 -------------------------------
-The demo sites keep going down because PHP Cloud based app sites suck..sorry
+© 2020 Stephen C. Sanders. Licensed under the GPL.

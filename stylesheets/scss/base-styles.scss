@@ -27,6 +27,7 @@ $primary-hover-color: darken($primary-button-color, 10%);
 $secondary-hover-color: darken($secondary-button-color, 10%);
 $overlay-color1: rgba(255,255,255,0.65);
 $overlay-color2: rgba(0,0,0,0.65);
+$hero-section-height: 85vh;
 
 /* GENERAL STYLES */
 body {
@@ -80,19 +81,20 @@ body {
 }
 
 .section {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    psdding-bottom: 20px;
     
-    .sec-header { /* header of each section */
-        font-size: 2rem;
-        text-align: center;
-        font-weight: bolder;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+    .container {
+        .sec-header { /* header of each section */
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 25px;
+        }
     
-    .row {
-        margin-top: 35px;
+        .row {
+            margin-top: 35px;
+        }
     }
 }
 
@@ -111,6 +113,11 @@ a {
         text-decoration: none !important;
         color: white !important;
     }
+}
+
+input#s { /* For searchbar in sidebar */
+    width: 100%;
+    margin: 5px auto 10px !important;
 }
 
 /* TOP-BAR */
@@ -137,24 +144,29 @@ a {
     background-image: url(../images/hero.jpg); /* Site's main image */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: $hero-section-height;
     
-    .hero-text {
-        background-color: $overlay-color1;
-        border-radius: 25px;
-        margin: 15% auto;
+    .container {
+        height: $hero-section-height;
         
-        h1 {
-            font-size: 3.25rem;
-            padding: 20px;
-        }
-        p {
-            font-size: 1.5rem;
-            padding: 10px;
+        .hero-text {
+            background-color: $overlay-color1;
+            border-radius: 25px;
+            margin: 15% auto;
+        
+            h1 {
+                font-size: 3.25rem;
+                padding: 20px;
+            }
             
-            a {
-                font-size: 2rem !important;
-                margin: 20px;
+            p {
+                font-size: 1.5rem;
+                padding: 10px;
+            
+                a {
+                    font-size: 2rem !important;
+                    margin: 20px;
+                }
             }
         }
     }
@@ -190,7 +202,7 @@ a {
 
 /* CTA */
 .cta-section { /* 'Call to Action' section */
-    height: 325px;
+    height: 350px;
     background-color: black;
     
     .container {
@@ -199,7 +211,7 @@ a {
             padding: 15px 25px;
             border-radius: 25px;
             width: 40%;
-            margin: 2.5% auto 0;
+            margin: 1.5% auto;
             
             p {
                 padding-top: 15px;
@@ -222,3 +234,5 @@ a {
         }
     }
 }
+
+/* MOBILE/SMALLER SCREEN STYLES */

@@ -4,7 +4,7 @@
  * @subpackage Baesick-Theme
  */
  
-    get_header();  //the Header
+    get_header();  // the Header
 
     get_template_part( 'top-bar', 'index' ); // the top-bar
         
@@ -14,23 +14,11 @@
     
     get_template_part( 'main-content', 'index' ); // the main content
 
-    get_template_part( 'cta', 'index' ); // the CTA
-?>
+    get_template_part( 'cta', 'index' ); // the Call-to-Action
 
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <?php get_template_part( 'loop', 'index' ); ?> <!-- the loop -->
-            </div>
-        
-            <div class="col-md-6 text-center">
-                <?php get_template_part( 'sidebar', 'index' ); ?> <!-- the Sidebar -->
-            </div>
-        </div>
-    </div>
-</div>
+    // ----- REMOVE THIS IF NOT NEEDED ----- //
+    get_template_part( 'loop-sidebar', 'index' ); // the loop sidebar section
 
-<?php    
-    get_footer(); //the Footer
+    get_footer(); // the Footer
+
 ?>
