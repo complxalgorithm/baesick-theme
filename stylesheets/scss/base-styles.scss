@@ -236,3 +236,36 @@ input#s { /* For searchbar in sidebar */
 }
 
 /* MOBILE/SMALLER SCREEN STYLES */
+@media screen and (min-width: 1200px) {
+    .container-fluid {
+        .menu-main-menu-container {
+            ul.menu {
+                li.menu-item {
+                    &:last-child, .last-menu-item {
+                        a {
+                            display: inline-block;
+                            font-weight: 400;
+                            text-align: center;
+                            vertical-align: middle;
+                            cursor: pointer;
+                            border: 1px solid $main-color;
+                            padding: 10px 15px;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            border-radius: 4px;
+                            color: white !important;
+                            background-color: $main-color;
+                        }
+                        
+                        &:hover a {
+                            background-color: $second-color;
+                            color: $main-color;
+                            border-color: $second-color;
+                            text-decoration: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

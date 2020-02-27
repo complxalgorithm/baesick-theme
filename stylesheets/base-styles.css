@@ -94,3 +94,5 @@ input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !imp
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
+@media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul.menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul.menu li.menu-item .last-menu-item a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid dimgray; padding: 10px 15px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: dimgray; }
+  .container-fluid .menu-main-menu-container ul.menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul.menu li.menu-item .last-menu-item:hover a { background-color: black; color: dimgray; border-color: black; text-decoration: none !important; } }
