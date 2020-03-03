@@ -39,6 +39,10 @@ body {
         width: 100% !important;
         max-width: 100% !important;
         
+        .row {
+            width: 100%;
+        }
+        
         .container-fluid {
             padding: 10px;
             width: 100%;
@@ -127,16 +131,48 @@ input#s { /* For searchbar in sidebar */
 }
 
 /* NAV AND MENU */
-.menu-main-menu-container {
-    ul.menu {
-        li.menu-item {
-            padding: 0 25px !important;
+.navbar {
+    padding: 0 !important;
+    height: 100px;
+    
+    .container-fluid {
+        height: 100px;
+        padding: 5px !important;
+        
+        .row {
+            height: 100px;
             
-            a {
-                color: $main-color !important;
+            .col-md-3 {
+                height: 100px;
+            }
+            
+            .col-md-9 {
+                height: 100px;
+                
+                .menu-main-menu-container {
+                    ul.menu {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center !important;
+        
+                        li.menu-item {
+                            padding: 0 20px !important;
+                            margin-bottom: 0 !important;
+                            min-width: 175px;
+                            height: 50px;
+                            text-align: center;
+                            font-weight: bolder;
+            
+                            a {
+                                color: $main-color !important;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
+    
 }
 
 /* HERO */
@@ -149,10 +185,13 @@ input#s { /* For searchbar in sidebar */
     .container {
         height: $hero-section-height;
         
+        .col-md-7 {
+            margin: 7.5% auto;
+        }
         .hero-text {
             background-color: $overlay-color1;
             border-radius: 25px;
-            margin: 15% auto;
+            margin: 0 auto;
         
             h1 {
                 font-size: 3.25rem;
@@ -239,9 +278,9 @@ input#s { /* For searchbar in sidebar */
 @media screen and (min-width: 1200px) {
     .container-fluid {
         .menu-main-menu-container {
-            ul.menu {
+            ul#menu-main-menu, ul:not(.sub-menu) {
                 li.menu-item {
-                    &:last-child, .last-menu-item {
+                    &:last-child, .last-menu-item { /* Change to effect 1+ menu items */
                         a {
                             display: inline-block;
                             font-weight: 400;

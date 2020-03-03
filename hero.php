@@ -7,7 +7,7 @@
 <div class="hero-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="hero-text text-center">
                     <h1>Some Information</h1>
                     <p>Even more information concerning this website</p>
