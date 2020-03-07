@@ -37,7 +37,7 @@ body .btn-secondary { background-color: #6c757d; border-color: #6c757d; }
 
 body .btn-secondary:hover { background-color: #545b62; border-color: #545b62; }
 
-.section { padding-top: 20px; psdding-bottom: 20px; }
+.section { padding-top: 20px; padding-bottom: 20px; }
 
 .section .container .sec-header { /* header of each section */ font-size: 2rem; text-align: center; font-weight: bolder; padding-bottom: 25px; }
 
@@ -56,22 +56,30 @@ input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !imp
 /* TOP-BAR */
 .top-bar { border-bottom: 1px solid black; height: auto; }
 
-/* NAV AND MENU */
-.navbar { padding: 0 !important; height: 100px; }
+/* HEADER */
+header { background-color: dimgray; }
 
-.navbar .container-fluid { height: 100px; padding: 5px !important; }
+header .sticky { position: sticky; top: 0; z-index: 10; }
 
-.navbar .container-fluid .row { height: 100px; }
+nav.navbar { padding: 0 !important; height: 100px !important; }
 
-.navbar .container-fluid .row .col-md-3 { height: 100px; }
+nav.navbar div.container-fluid { height: 100px !important; padding: 5px !important; }
 
-.navbar .container-fluid .row .col-md-9 { height: 100px; }
+nav.navbar div.container-fluid div.row { height: 100px !important; }
 
-.navbar .container-fluid .row .col-md-9 .menu-main-menu-container ul.menu { display: flex; width: 100%; justify-content: center !important; }
+nav.navbar div.container-fluid div.row div.col-md-3 { height: 100px !important; }
 
-.navbar .container-fluid .row .col-md-9 .menu-main-menu-container ul.menu li.menu-item { padding: 0 20px !important; margin-bottom: 0 !important; min-width: 175px; height: 50px; text-align: center; font-weight: bolder; }
+nav.navbar div.container-fluid div.row div.col-md-9 { height: 100px !important; }
 
-.navbar .container-fluid .row .col-md-9 .menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; }
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu { display: flex; justify-content: center !important; margin: 15px auto !important; }
+
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item { padding: 0 15px !important; margin-bottom: 0 !important; width: auto; text-align: center; font-weight: bolder; }
+
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; font-size: 1.25rem; }
+
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu { background-color: dimgray !important; }
+
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { color: white !important; }
 
 /* HERO */
 .hero-section { background-image: url(../images/hero.jpg); /* Site's main image */ background-size: cover; background-repeat: no-repeat; height: 85vh; }
@@ -110,6 +118,8 @@ input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !imp
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
-@media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item .last-menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item .last-menu-item { /* Change to effect 1+ menu items */ }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item .last-menu-item a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item .last-menu-item a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid dimgray; padding: 10px 15px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: dimgray; }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item .last-menu-item:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item .last-menu-item:hover a { background-color: black; color: dimgray; border-color: black; text-decoration: none !important; } }
+@media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item ul.sub-menu li:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item ul.sub-menu li:last-child a { border: unset !important; padding: 0 !important; background-color: unset; color: dimgray !important; }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items */ }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid dimgray; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: dimgray; }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { background-color: black; color: dimgray; border-color: black; text-decoration: none !important; } }

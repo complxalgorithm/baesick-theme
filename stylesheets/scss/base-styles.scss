@@ -28,6 +28,10 @@ $secondary-hover-color: darken($secondary-button-color, 10%);
 $overlay-color1: rgba(255,255,255,0.65);
 $overlay-color2: rgba(0,0,0,0.65);
 $hero-section-height: 85vh;
+$mobile-size: 768px;
+$tab-size: 992px;
+$lg-size: 1200px;
+$xl-size: 1400px;
 
 /* GENERAL STYLES */
 body {
@@ -86,7 +90,7 @@ body {
 
 .section {
     padding-top: 20px;
-    psdding-bottom: 20px;
+    padding-bottom: 20px;
     
     .container {
         .sec-header { /* header of each section */
@@ -130,41 +134,67 @@ input#s { /* For searchbar in sidebar */
     height: auto;
 }
 
-/* NAV AND MENU */
-.navbar {
-    padding: 0 !important;
-    height: 100px;
+/* HEADER */
+header {
+    background-color: $main-color;
     
-    .container-fluid {
-        height: 100px;
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+}
+
+nav.navbar {
+    padding: 0 !important;
+    height: 100px !important;
+    
+    div.container-fluid {
+        height: 100px !important;
         padding: 5px !important;
         
-        .row {
-            height: 100px;
+        div.row {
+            height: 100px !important;
             
-            .col-md-3 {
-                height: 100px;
+            div.col-md-3 {
+                height: 100px !important;
             }
             
-            .col-md-9 {
-                height: 100px;
+            div.col-md-9 {
+                height: 100px !important;
                 
-                .menu-main-menu-container {
+                div.menu-main-menu-container {
                     ul.menu {
                         display: flex;
-                        width: 100%;
                         justify-content: center !important;
+                        margin: 15px auto !important;
         
                         li.menu-item {
-                            padding: 0 20px !important;
+                            padding: 0 15px !important;
                             margin-bottom: 0 !important;
-                            min-width: 175px;
-                            height: 50px;
+                            width: auto;
                             text-align: center;
                             font-weight: bolder;
             
                             a {
                                 color: $main-color !important;
+                                font-size: 1.25rem;
+                            }
+                        }
+                            
+                        li.menu-item-has-children {
+                            > a {
+                                    
+                            }
+                                
+                            .submenu {
+                                background-color: $main-color !important;
+                                    
+                                li {
+                                    a {
+                                        color: white !important;
+                                    }
+                                }
                             }
                         }
                     }
@@ -172,7 +202,6 @@ input#s { /* For searchbar in sidebar */
             }
         }
     }
-    
 }
 
 /* HERO */
@@ -275,12 +304,25 @@ input#s { /* For searchbar in sidebar */
 }
 
 /* MOBILE/SMALLER SCREEN STYLES */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $lg-size) {
     .container-fluid {
         .menu-main-menu-container {
             ul#menu-main-menu, ul:not(.sub-menu) {
                 li.menu-item {
-                    &:last-child, .last-menu-item { /* Change to effect 1+ menu items */
+                    font-size: 1.25rem;
+                    
+                    ul.sub-menu {
+                        li:last-child {
+                            a {
+                                border: unset !important;
+                                padding: 0 !important;
+                                background-color: unset;
+                                color: $main-color !important;
+                            }
+                        }
+                    }
+                    
+                    &:last-child { /* Change to effect 1+ menu items */
                         a {
                             display: inline-block;
                             font-weight: 400;
@@ -289,7 +331,6 @@ input#s { /* For searchbar in sidebar */
                             cursor: pointer;
                             border: 1px solid $main-color;
                             padding: 10px 15px;
-                            font-size: 14px;
                             line-height: 1.5;
                             border-radius: 4px;
                             color: white !important;
