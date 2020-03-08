@@ -63,9 +63,9 @@ header .sticky { position: sticky; top: 0; z-index: 10; }
 
 nav.navbar { padding: 0 !important; height: 100px !important; }
 
-nav.navbar div.container-fluid { height: 100px !important; padding: 5px !important; }
+nav.navbar div.container-fluid { height: 100px !important; padding: 0 5px !important; }
 
-nav.navbar div.container-fluid div.row { height: 100px !important; }
+nav.navbar div.container-fluid div.row { height: 100px !important; width: 95%; margin: auto; }
 
 nav.navbar div.container-fluid div.row div.col-md-3 { height: 100px !important; }
 
@@ -73,7 +73,7 @@ nav.navbar div.container-fluid div.row div.col-md-9 { height: 100px !important; 
 
 nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu { display: flex; justify-content: center !important; margin: 15px auto !important; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item { padding: 0 15px !important; margin-bottom: 0 !important; width: auto; text-align: center; font-weight: bolder; }
+nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item { padding: 0 15px !important; margin-bottom: 0 !important; width: auto; max-width: 250px; text-align: center; font-weight: bolder; }
 
 nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; font-size: 1.25rem; }
 

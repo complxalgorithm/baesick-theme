@@ -151,10 +151,12 @@ nav.navbar {
     
     div.container-fluid {
         height: 100px !important;
-        padding: 5px !important;
+        padding: 0 5px !important;
         
         div.row {
             height: 100px !important;
+            width: 95%;
+            margin: auto;
             
             div.col-md-3 {
                 height: 100px !important;
@@ -173,6 +175,7 @@ nav.navbar {
                             padding: 0 15px !important;
                             margin-bottom: 0 !important;
                             width: auto;
+                            max-width: 250px;
                             text-align: center;
                             font-weight: bolder;
             
