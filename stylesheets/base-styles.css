@@ -21,7 +21,7 @@ body .container { width: 100% !important; max-width: 100% !important; }
 
 body .container .row { width: 100%; }
 
-body .container .container-fluid { padding: 10px; width: 100%; }
+body .container .container-fluid { width: 100%; }
 
 body h1, body h2, body h3, body h4, body h5 { font-family: "Georgia", Helvetica, Arial, sans-serif; font-weight: bolder; color: black; }
 
@@ -54,14 +54,14 @@ a.btn { text-decoration: none !important; color: white !important; }
 input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !important; }
 
 /* TOP-BAR */
-.top-bar { border-bottom: 1px solid black; height: auto; }
+.top-bar { border-bottom: 1px solid dimgray; height: auto; }
+
+.top-bar .container-fluid { padding: 5px !important; }
 
 /* HEADER */
-header { background-color: dimgray; }
+header .sticky { /* Allows header/nav to remain at the very top of page */ position: sticky; top: 0; z-index: 10; }
 
-header .sticky { position: sticky; top: 0; z-index: 10; }
-
-nav.navbar { padding: 0 !important; height: 100px !important; }
+nav.navbar { padding: 0 !important; height: 100px !important; background-color: dimgray; }
 
 nav.navbar div.container-fluid { height: 100px !important; padding: 0 5px !important; }
 
@@ -121,5 +121,5 @@ nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container
 @media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item ul.sub-menu li:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item ul.sub-menu li:last-child a { border: unset !important; padding: 0 !important; background-color: unset; color: dimgray !important; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items */ }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid dimgray; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: dimgray; }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { background-color: black; color: dimgray; border-color: black; text-decoration: none !important; } }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #007bff; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: #007bff; }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { background-color: #0062cc; color: white !important; border-color: #0062cc; text-decoration: none !important; } }

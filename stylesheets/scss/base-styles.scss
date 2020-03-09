@@ -48,7 +48,6 @@ body {
         }
         
         .container-fluid {
-            padding: 10px;
             width: 100%;
         }
     }
@@ -130,15 +129,17 @@ input#s { /* For searchbar in sidebar */
 
 /* TOP-BAR */
 .top-bar {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $main-color;
     height: auto;
+    
+    .container-fluid {
+        padding: 5px !important;
+    }
 }
 
 /* HEADER */
 header {
-    background-color: $main-color;
-    
-    .sticky {
+    .sticky {   /* Allows header/nav to remain at the very top of page */
         position: sticky;
         top: 0;
         z-index: 10;
@@ -148,6 +149,7 @@ header {
 nav.navbar {
     padding: 0 !important;
     height: 100px !important;
+    background-color: $main-color;
     
     div.container-fluid {
         height: 100px !important;
@@ -332,18 +334,18 @@ nav.navbar {
                             text-align: center;
                             vertical-align: middle;
                             cursor: pointer;
-                            border: 1px solid $main-color;
+                            border: 1px solid $primary-button-color;
                             padding: 10px 15px;
                             line-height: 1.5;
                             border-radius: 4px;
                             color: white !important;
-                            background-color: $main-color;
+                            background-color: $primary-button-color;
                         }
                         
                         &:hover a {
-                            background-color: $second-color;
-                            color: $main-color;
-                            border-color: $second-color;
+                            background-color: $primary-hover-color;
+                            color: white !important;
+                            border-color: $primary-hover-color;
                             text-decoration: none !important;
                         }
                     }
