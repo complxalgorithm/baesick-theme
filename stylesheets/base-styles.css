@@ -63,34 +63,34 @@ header .sticky { /* Allows header/nav to remain at the very top of page */ posit
 
 nav.navbar { padding: 0 !important; height: 100px !important; background-color: dimgray; }
 
-nav.navbar div.container-fluid { height: 100px !important; padding: 0 5px !important; }
+nav.navbar div.container-fluid { height: 100px !important; padding: 0 !important; }
 
 nav.navbar div.container-fluid div.row { height: 100px !important; width: 95%; margin: auto; }
 
 nav.navbar div.container-fluid div.row div.col-md-3 { height: 100px !important; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 { height: 100px !important; }
+nav.navbar div.container-fluid div.row div.col-md-9 { height: 100px !important; padding: 0 !important; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu { display: flex; justify-content: center !important; margin: 15px auto !important; }
+div.menu-main-menu-container ul.menu { display: flex; justify-content: center !important; margin: 0 auto !important; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item { padding: 0 15px !important; margin-bottom: 0 !important; width: auto; max-width: 250px; text-align: center; font-weight: bolder; }
+div.menu-main-menu-container ul.menu li.menu-item { padding: 0 12.5px !important; margin-bottom: 0 !important; width: auto; max-width: 250px; text-align: center; font-weight: bolder; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; font-size: 1.25rem; }
+div.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; font-size: 1.25rem; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu { background-color: dimgray !important; }
+div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu { background-color: dimgray !important; }
 
-nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { color: white !important; }
+div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { color: white !important; }
 
 /* HERO */
 .hero-section { background-image: url(../images/hero.jpg); /* Site's main image */ background-size: cover; background-repeat: no-repeat; height: 85vh; }
 
 .hero-section .container { height: 85vh; }
 
-.hero-section .container .col-md-7 { margin: 7.5% auto; }
+.hero-section .container .col-md-7 { margin: 5% 2.5%; }
 
 .hero-section .container .hero-text { background-color: rgba(255, 255, 255, 0.65); border-radius: 25px; margin: 0 auto; }
 
-.hero-section .container .hero-text h1 { font-size: 3.25rem; padding: 20px; }
+.hero-section .container .hero-text h1 { font-size: 2.5rem; padding: 20px; font-weight: bolder; }
 
 .hero-section .container .hero-text p { font-size: 1.5rem; padding: 10px; }
 
@@ -118,6 +118,9 @@ nav.navbar div.container-fluid div.row div.col-md-9 div.menu-main-menu-container
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
+@media screen and (max-width: 1199px) { body .container { width: 100% !important; }
+  .menu-main-menu-container { display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */ } }
+
 @media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item ul.sub-menu li:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item ul.sub-menu li:last-child a { border: unset !important; padding: 0 !important; background-color: unset; color: dimgray !important; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items */ }
