@@ -14,6 +14,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /* FONTS */
 /* VARIABLES */
+/*
+Theme Name: Baesick-Theme
+File: _variables.scss
+Theme URI: https://github.com/complxalgorithm/baesick-theme
+Author: complxalgorithm
+Author URI: https://stephensanders.me
+Description: A fork of wyck's WP-Skeleton-Theme - https://github.com/wycks/WP-Skeleton-Theme 
+Version: 1.1
+License: http://www.opensource.org/licenses/mit-license.php.
+Tags: Responsive, grid, mobile, framework, bare-bones, white, minimal
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* VARIABLES */
 /* GENERAL STYLES */
 body { overflow-x: hidden; width: 98.5%; margin: auto !important; }
 
@@ -56,7 +71,11 @@ input#s { /* For searchbar in sidebar */ width: 100%; margin: 5px auto 10px !imp
 /* TOP-BAR */
 .top-bar { border-bottom: 1px solid dimgray; height: auto; }
 
-.top-bar .container-fluid { padding: 5px !important; }
+.top-bar .container-fluid { padding: 5px !important; width: 85% !important; }
+
+.top-bar .container-fluid .top-bar-info { float: left; font-size: 1.1rem !important; line-height: 1.75; }
+
+.top-bar .container-fluid .social-icons { float: right; }
 
 /* HEADER */
 header .sticky { /* Allows header/nav to remain at the very top of page */ position: sticky; top: 0; z-index: 10; }
@@ -69,11 +88,15 @@ nav.navbar div.container-fluid div.row { height: 100px !important; width: 95%; m
 
 nav.navbar div.container-fluid div.row div.col-md-3 { height: 100px !important; }
 
+nav.navbar div.container-fluid div.row div.col-md-3 .logo { height: 100px !important; }
+
+nav.navbar div.container-fluid div.row div.col-md-3 .logo .main-logo { width: auto; max-width: unset !important; }
+
 nav.navbar div.container-fluid div.row div.col-md-9 { height: 100px !important; padding: 0 !important; }
 
 div.menu-main-menu-container ul.menu { display: flex; justify-content: center !important; margin: 0 auto !important; }
 
-div.menu-main-menu-container ul.menu li.menu-item { padding: 0 12.5px !important; margin-bottom: 0 !important; width: auto; max-width: 250px; text-align: center; font-weight: bolder; }
+div.menu-main-menu-container ul.menu li.menu-item { padding: 0 25px !important; margin-bottom: 0 !important; width: auto; max-width: 250px; text-align: center; font-weight: bolder; }
 
 div.menu-main-menu-container ul.menu li.menu-item a { color: dimgray !important; font-size: 1.25rem; }
 
@@ -110,9 +133,13 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 /* CTA */
 .cta-section { /* 'Call to Action' section */ height: 350px; background-color: black; }
 
-.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 15px 25px; border-radius: 25px; width: 40%; margin: 1.5% auto; }
+.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 25px 30px; border-radius: 25px; width: 450%; margin: 1.5% auto; }
+
+.cta-section .container .cta-info h2 { font-size: 3rem; line-height: 1.35; }
 
 .cta-section .container .cta-info p { padding-top: 15px; }
+
+.cta-section .container .cta-info p a.btn { background-color: #000000 !important; border-color: #000000 !important; font-size: 1.75rem; }
 
 /* FOOTER */
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }

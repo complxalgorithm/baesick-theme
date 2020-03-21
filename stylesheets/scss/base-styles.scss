@@ -17,21 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // ------- IMPORT ADDITIONAL FONTS HERE ------- //
 
 /* VARIABLES */
-$default-font: "Times New Roman", Helvetica, Arial, sans-serif;
-$header-font: "Georgia", Helvetica, Arial, sans-serif;;
-$main-color: dimgray;
-$second-color: black;
-$primary-button-color: #007bff;
-$secondary-button-color: #6c757d;
-$primary-hover-color: darken($primary-button-color, 10%);
-$secondary-hover-color: darken($secondary-button-color, 10%);
-$overlay-color1: rgba(255,255,255,0.65);
-$overlay-color2: rgba(0,0,0,0.65);
-$hero-section-height: 85vh;
-$mobile-size: 767px;
-$tab-size: 991px;
-$lg-size: 1199px;
-$xl-size: 1399px;
+@import 'assets/_variables.scss';
 
 /* GENERAL STYLES */
 body {
@@ -134,6 +120,17 @@ input#s { /* For searchbar in sidebar */
     
     .container-fluid {
         padding: 5px !important;
+        width: 85% !important;
+        
+        .top-bar-info {
+            float: left;
+            font-size: 1.1rem !important;
+            line-height: 1.75;
+        }
+        
+        .social-icons {
+            float: right;    
+        }
     }
 }
 
@@ -162,6 +159,15 @@ nav.navbar {
             
             div.col-md-3 {
                 height: 100px !important;
+                
+                .logo {
+                    height: 100px !important;
+                    
+                    .main-logo {
+                        width: auto;
+                        max-width: unset !important;
+                    }
+                }
             }
             
             div.col-md-9 {
@@ -179,7 +185,7 @@ div.menu-main-menu-container {
         margin: 0 auto !important;
         
         li.menu-item {
-            padding: 0 12.5px !important;
+            padding: 0 25px !important;
             margin-bottom: 0 !important;
             width: auto;
             max-width: 250px;
@@ -283,13 +289,24 @@ div.menu-main-menu-container {
     .container {
         .cta-info { /* Container for CTA text & button */
             background-color: $overlay-color1;
-            padding: 15px 25px;
+            padding: 25px 30px;
             border-radius: 25px;
-            width: 40%;
+            width: 450%;
             margin: 1.5% auto;
+            
+            h2 {
+                font-size: 3rem;
+                line-height: 1.35;
+            }
             
             p {
                 padding-top: 15px;
+                
+                a.btn {
+                    background-color: #000000 !important;
+                    border-color: #000000 !important;
+                    font-size: 1.75rem;
+                }
             }
         }
     }
