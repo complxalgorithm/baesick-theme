@@ -339,8 +339,14 @@ div.menu-main-menu-container {
         }
     }
     
-    .menu-main-menu-container {
-        display: none;      /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
+    .navbar {
+        .logo {
+            text-align: center;    
+        }
+        
+        .menu-main-menu-container {
+            display: none;      /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
+        }
     }
 }
 
