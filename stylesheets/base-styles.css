@@ -133,7 +133,7 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 /* CTA */
 .cta-section { /* 'Call to Action' section */ height: 350px; background-color: black; }
 
-.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 25px 30px; border-radius: 25px; width: 450%; margin: 1.5% auto; }
+.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 25px 30px; border-radius: 25px; width: 50%; margin: 1.5% auto; }
 
 .cta-section .container .cta-info h2 { font-size: 3rem; line-height: 1.35; }
 
