@@ -12,8 +12,6 @@ Tags: Responsive, grid, mobile, framework, bare-bones, white, minimal
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* FONTS */
-/* VARIABLES */
 /*
 Theme Name: Baesick-Theme
 File: _variables.scss
@@ -40,7 +38,7 @@ body .container .container-fluid { width: 100%; }
 
 body h1, body h2, body h3, body h4, body h5 { font-family: "Georgia", Helvetica, Arial, sans-serif; font-weight: bolder; color: black; }
 
-body a.btn { font-family: "Georgia", Helvetica, Arial, sans-serif; }
+body a.btn { font-family: "Georgia", Helvetica, Arial, sans-serif; font-size: 1.5rem; }
 
 body p, body a:not(button) { font-family: "Times New Roman", Helvetica, Arial, sans-serif; }
 
@@ -145,12 +143,14 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
-@media screen and (max-width: 1199px) { body .container { width: 100% !important; }
-  .navbar .logo { text-align: center; }
-  .navbar .menu-main-menu-container { display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */ } }
+@media screen and (max-width: 999px) { .navbar .col-md-3 { max-width: 100%; flex: 0 0 100% !important; }
+  .navbar .col-md-3 .logo { text-align: center; }
+  .navbar .col-md-9 { display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */ } }
+
+@media screen and (max-width: 1199px) { body .container { width: 100% !important; } }
 
 @media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item ul.sub-menu li:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item ul.sub-menu li:last-child a { border: unset !important; padding: 0 !important; background-color: unset; color: dimgray !important; }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items */ }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #007bff; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: #007bff; }
-  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { background-color: #0062cc; color: white !important; border-color: #0062cc; text-decoration: none !important; } }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items - use :nth-last-child */ }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { /* Makes last nav link look like a button */ display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #007bff; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: #007bff; }
+  .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { /* Hover effects for last nav link */ background-color: #0062cc; color: white !important; border-color: #0062cc; text-decoration: none !important; } }

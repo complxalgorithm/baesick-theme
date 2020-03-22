@@ -1,4 +1,4 @@
-# Baesick - Skeleton WordPress Theme
+# Baesick - Bootstrap/Skeleton WordPress Theme
 -------------------------------------
 
 This is a very minimal responsive [Bootstrap](https://getbootstrap.com/)-based WordPress starter theme forked from wycks' WP-Skeleton-Theme, which itself is based on [Skeleton](https://getskeleton.com).

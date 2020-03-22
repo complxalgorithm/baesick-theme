@@ -13,10 +13,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* FONTS */
 // ------- IMPORT ADDITIONAL FONTS HERE ------- //
-
-/* VARIABLES */
 @import 'assets/_variables.scss';
 
 /* GENERAL STYLES */
@@ -46,6 +43,7 @@ body {
     
     a.btn {
         font-family: $header-font;
+        font-size: 1.5rem;
     }
     
     p, a:not(button) {
@@ -332,20 +330,27 @@ div.menu-main-menu-container {
     
 }
 
+@media screen and (max-width: 999px) {
+    .navbar {
+        .col-md-3 {
+            max-width: 100%;
+            flex: 0 0 100% !important;
+            
+            .logo {
+                text-align: center;    
+            }
+        }
+        
+        .col-md-9 {
+            display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
+        }
+    }
+}
+
 @media screen and (max-width: $lg-size) {
     body {
         .container {
             width: 100% !important;
-        }
-    }
-    
-    .navbar {
-        .logo {
-            text-align: center;    
-        }
-        
-        .menu-main-menu-container {
-            display: none;      /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
         }
     }
 }
@@ -368,8 +373,8 @@ div.menu-main-menu-container {
                         }
                     }
                     
-                    &:last-child { /* Change to effect 1+ menu items */
-                        a {
+                    &:last-child { /* Change to effect 1+ menu items - use :nth-last-child */
+                        a { /* Makes last nav link look like a button */
                             display: inline-block;
                             font-weight: 400;
                             text-align: center;
@@ -383,7 +388,7 @@ div.menu-main-menu-container {
                             background-color: $primary-button-color;
                         }
                         
-                        &:hover a {
+                        &:hover a { /* Hover effects for last nav link */
                             background-color: $primary-hover-color;
                             color: white !important;
                             border-color: $primary-hover-color;
