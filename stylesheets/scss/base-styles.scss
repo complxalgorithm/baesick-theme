@@ -330,6 +330,16 @@ div.menu-main-menu-container {
     
 }
 
+@media screen and (min-width: 768px) and (max-width: 1075px) {
+    .hero-section {
+        .col-md-5 {
+            margin: 7.5% 2.5% !important;
+            min-width: 55% !important;;
+            flex: 0 0 55% !important;
+        }
+    }
+}
+
 @media screen and (max-width: 999px) {
     .navbar {
         .col-md-3 {
@@ -343,6 +353,41 @@ div.menu-main-menu-container {
         
         .col-md-9 {
             display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1283px) {
+    .navbar {
+        .container-fluid {
+            .row {
+                width: 100% !important;
+                
+                .col-md-3 {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+                
+                .menu {
+                    .menu-item {
+                        padding: 0 15px !important;
+                        
+                        a {
+                            font-size: 1rem !important;        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1284px) and (max-width: 1412px) {
+    .menu {
+        .menu-item {
+            a {
+                font-size: 1.1rem !important;        
+            }
         }
     }
 }
