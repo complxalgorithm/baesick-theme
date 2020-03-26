@@ -120,14 +120,18 @@ input#s { /* For searchbar in sidebar */
         padding: 5px !important;
         width: 85% !important;
         
-        .top-bar-info {
-            float: left;
-            font-size: 1.1rem !important;
-            line-height: 1.75;
-        }
+        .col-md-6 {
+            padding: 0 !important;
+            
+            .top-bar-info {
+                float: left;
+                font-size: 1.1rem !important;
+                line-height: 1.75;
+            }
         
-        .social-icons {
-            float: right;    
+            .social-icons {
+                float: right;    
+            }
         }
     }
 }
@@ -327,7 +331,30 @@ div.menu-main-menu-container {
 
 /* MOBILE/SMALLER SCREEN STYLES */
 @media screen and (max-width: $mobile-size) {
-    
+    .top-bar {
+        .col-md-6 {
+            .tb-info {
+                float: unset !important;
+                display: block;
+                font-size: 0.95rem !important;
+            }
+            
+            .social-icons {
+                float: unset !important;
+                font-size: 0.75rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 936px) { // so topbar stays on one line
+    .top-bar {
+        .col-md-6 {
+            .tb-info {
+                font-size: 0.875rem !important;    
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1075px) {
