@@ -144,6 +144,17 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 /* FOOTER */
 .footer .container .footer-copyright { padding-top: 10px; padding-bottom: 10px; text-align: center; }
 
+/* PAGES */
+body.page-template #content .page-header { background-color: black; height: auto; }
+
+body.page-template #content .page-header header { text-align: center; }
+
+body.page-template #content .page-header header .entry-title { color: white !important; padding: 15px 0; }
+
+body.page-template #content .entry-content { padding: 50px 0; }
+
+body.page-template .footer { border-top: 1px dotted dimgray; }
+
 /* MOBILE/SMALLER SCREEN STYLES */
 @media screen and (max-width: 767px) { .top-bar .col-md-6 .tb-info { float: unset !important; display: block; font-size: 0.95rem !important; }
   .top-bar .col-md-6 .social-icons { float: unset !important; font-size: 0.75rem !important; } }
@@ -165,7 +176,7 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 
 @media screen and (max-width: 1199px) { body .container { width: 100% !important; } }
 
-@media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; }
+@media screen and (min-width: 1200px) { .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item { font-size: 1.25rem; /*  < Remove comments to use > &:nth-last-child(2) {   < Turns second to last nav item into button > a { display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid black; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: black; } &:hover a { background-color: darken($secondary-button-color, 27.5%); color: white !important; border-color: darken($secondary-button-color, 27.5%); text-decoration: none !important; }         } */ }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item ul.sub-menu li:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item ul.sub-menu li:last-child a { border: unset !important; padding: 0 !important; background-color: unset; color: dimgray !important; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items - use :nth-last-child */ }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { /* Makes last nav link look like a button */ display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #007bff; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: #007bff; }

@@ -46,6 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .container .fourteen.columns                { width: 820px; }
     .container .fifteen.columns                 { width: 880px; }
     .container .sixteen.columns                 { width: 940px; }
+    .container .full-width.columns              { width: 100%; margin-left: 0 !important; padding-left: 0 !important }
 
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }
