@@ -36,12 +36,20 @@ register_sidebar( array(
 //Enqueue_styles
 if ( ! function_exists( 'Wps_load_styles' ) ) {
 function Wps_load_styles() {
-
+    
+    // skeleton
 	wp_register_style( 'skeleton-style', get_template_directory_uri() . '/style.css');
-	wp_register_style( 'skeleton-base', get_template_directory_uri() . '/stylesheets/base.css');
+	wp_register_style( 'skeleton-base', get_template_directory_uri() . '/stylesheets/base.css' );
 
 	wp_enqueue_style( 'skeleton-base' );
 	wp_enqueue_style( 'skeleton-style' );
+    
+    // bootstrap
+    wp_register_style( 'bootstrap-base', get_template_directory_uri() . '/stylesheets/base-styles.css' );
+    wp_register_style( 'bootstrap-custom', get_template_directory_uri() . '/stylesheets/custom-styles.css' );
+    
+    wp_enqueue_style( 'boostrap-base' );
+    wp_enqueue_style( 'boostrap-custom' );
 
 }
 add_action('wp_enqueue_scripts', 'Wps_load_styles');

@@ -293,7 +293,7 @@ div.menu-main-menu-container {
             background-color: $overlay-color1;
             padding: 25px 30px;
             border-radius: 25px;
-            width: 50%;
+            width: 52.5%;
             margin: 1.5% auto;
             
             h2 {
@@ -302,7 +302,7 @@ div.menu-main-menu-container {
             }
             
             p {
-                padding-top: 15px;
+                padding-top: 35px;
                 
                 a.btn {
                     background-color: #000000 !important;
@@ -347,7 +347,20 @@ body.page-template {
         }
         
         .entry-content {
-            padding: 50px 0;    
+            padding: 25px 50px;
+            
+            .row {
+                justify-content: center !important;
+                
+                p {
+                    font-size: 1.15rem !important;
+                    
+                    @media screen and (min-width: 900px) {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+            }
         }
     }
     
@@ -407,6 +420,36 @@ body.page-template {
         
         .col-md-9 {
             display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) { // REMOVE/COMMENT OUT IF NOT NEEDED
+    .menu {
+        .menu-item:not(:last-child) a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            padding-left: 0;
+            padding-right: 0;
+            
+            &:hover {
+                opacity: 1;    
+            }
+            
+            &:before {
+                transition: 0.3s;
+                height: 2px;
+                content: "";
+                position: absolute;
+                background-color: #FFFFFF;  // Color of underline
+                width: 0%;
+                bottom: 10px;
+            }
+            
+            &:hover::before {
+                width: 100%;    
+            }
         }
     }
 }

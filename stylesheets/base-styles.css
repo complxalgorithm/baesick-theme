@@ -133,11 +133,11 @@ div.menu-main-menu-container ul.menu li.menu-item-has-children .submenu li a { c
 /* CTA */
 .cta-section { /* 'Call to Action' section */ height: 350px; background-color: black; }
 
-.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 25px 30px; border-radius: 25px; width: 50%; margin: 1.5% auto; }
+.cta-section .container .cta-info { /* Container for CTA text & button */ background-color: rgba(255, 255, 255, 0.65); padding: 25px 30px; border-radius: 25px; width: 52.5%; margin: 1.5% auto; }
 
 .cta-section .container .cta-info h2 { font-size: 3rem; line-height: 1.35; }
 
-.cta-section .container .cta-info p { padding-top: 15px; }
+.cta-section .container .cta-info p { padding-top: 35px; }
 
 .cta-section .container .cta-info p a.btn { background-color: #000000 !important; border-color: #000000 !important; font-size: 1.75rem; }
 
@@ -151,7 +151,13 @@ body.page-template #content .page-header header { text-align: center; }
 
 body.page-template #content .page-header header .entry-title { color: white !important; padding: 15px 0; }
 
-body.page-template #content .entry-content { padding: 50px 0; }
+body.page-template #content .entry-content { padding: 25px 50px; }
+
+body.page-template #content .entry-content .row { justify-content: center !important; }
+
+body.page-template #content .entry-content .row p { font-size: 1.15rem !important; }
+
+@media screen and (min-width: 900px) { body.page-template #content .entry-content .row p { width: 50%; margin: 0 auto; } }
 
 body.page-template .footer { border-top: 1px dotted dimgray; }
 
@@ -166,6 +172,11 @@ body.page-template .footer { border-top: 1px dotted dimgray; }
 @media screen and (max-width: 999px) { .navbar .col-md-3 { max-width: 100%; flex: 0 0 100% !important; }
   .navbar .col-md-3 .logo { text-align: center; }
   .navbar .col-md-9 { display: none; /* IF NOT USING MOBILE MENU PLUGIN - WILL HAVE TO STYLE */ } }
+
+@media screen and (min-width: 1000px) { .menu .menu-item:not(:last-child) a { display: inline-block; position: relative; text-decoration: none; padding-left: 0; padding-right: 0; }
+  .menu .menu-item:not(:last-child) a:hover { opacity: 1; }
+  .menu .menu-item:not(:last-child) a:before { transition: 0.3s; height: 2px; content: ""; position: absolute; background-color: #FFFFFF; width: 0%; bottom: 10px; }
+  .menu .menu-item:not(:last-child) a:hover::before { width: 100%; } }
 
 @media screen and (min-width: 1000px) and (max-width: 1283px) { .navbar .container-fluid .row { width: 100% !important; }
   .navbar .container-fluid .row .col-md-3 { padding-left: 10px !important; padding-right: 10px !important; }
