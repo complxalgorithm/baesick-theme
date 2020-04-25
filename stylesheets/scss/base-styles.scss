@@ -370,6 +370,21 @@ body.page-template {
 }
 
 /* MOBILE/SMALLER SCREEN STYLES */
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) { // iPad Pro styles
+    .hero-section {
+        .col-md-7 {
+            margin: 7.5% 2.5% !important;
+            
+            .hero-text {
+                p:first-of-type {
+                    line-height: 1.5 !important;
+                    padding: 25px !important;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $mobile-size) {
     .top-bar {
         .col-md-6 {
@@ -562,6 +577,47 @@ body.page-template {
                         }        
                     }
                     */
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {  // larger screen sizes
+    .hero-section {
+        .col-md-7 {
+            margin: 7.5% 2.5%;
+            
+            .hero-text {
+                padding: 15px !important;    
+            }
+        }
+    }
+    
+    .about-section {
+        .about-text {
+            font-size: 1.35rem !important;
+            margin-top: 7.5% !important;
+        }
+    }
+    
+    .cta-section {
+        height: 525px !important;
+        
+        .cta-info {
+            padding: 35px 40px !important;
+            margin: 3.5% auto !important;
+            width: 65% !important;
+            
+            h2 {
+                font-size: 3.25rem !important;    
+            }
+            
+            p {
+                padding-top: 50px !important;
+                
+                a.btn {
+                    font-size: 2rem !important;    
                 }
             }
         }

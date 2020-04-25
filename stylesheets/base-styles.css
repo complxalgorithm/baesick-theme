@@ -162,6 +162,9 @@ body.page-template #content .entry-content .row p { font-size: 1.15rem !importan
 body.page-template .footer { border-top: 1px dotted dimgray; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) { .hero-section .col-md-7 { margin: 7.5% 2.5% !important; }
+  .hero-section .col-md-7 .hero-text p:first-of-type { line-height: 1.5 !important; padding: 25px !important; } }
+
 @media screen and (max-width: 767px) { .top-bar .col-md-6 .tb-info { float: unset !important; display: block; font-size: 0.95rem !important; }
   .top-bar .col-md-6 .social-icons { float: unset !important; font-size: 0.75rem !important; } }
 
@@ -192,3 +195,12 @@ body.page-template .footer { border-top: 1px dotted dimgray; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child { /* Change to effect 1+ menu items - use :nth-last-child */ }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child a { /* Makes last nav link look like a button */ display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #007bff; padding: 10px 15px; line-height: 1.5; border-radius: 4px; color: white !important; background-color: #007bff; }
   .container-fluid .menu-main-menu-container ul#menu-main-menu li.menu-item:last-child:hover a, .container-fluid .menu-main-menu-container ul:not(.sub-menu) li.menu-item:last-child:hover a { /* Hover effects for last nav link */ background-color: #0062cc; color: white !important; border-color: #0062cc; text-decoration: none !important; } }
+
+@media screen and (min-width: 1900px) { .hero-section .col-md-7 { margin: 7.5% 2.5%; }
+  .hero-section .col-md-7 .hero-text { padding: 15px !important; }
+  .about-section .about-text { font-size: 1.35rem !important; margin-top: 7.5% !important; }
+  .cta-section { height: 525px !important; }
+  .cta-section .cta-info { padding: 35px 40px !important; margin: 3.5% auto !important; width: 65% !important; }
+  .cta-section .cta-info h2 { font-size: 3.25rem !important; }
+  .cta-section .cta-info p { padding-top: 50px !important; }
+  .cta-section .cta-info p a.btn { font-size: 2rem !important; } }
