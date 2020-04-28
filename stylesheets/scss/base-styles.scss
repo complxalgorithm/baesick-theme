@@ -17,6 +17,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'assets/_variables.scss';
 
 /* GENERAL STYLES */
+html { max-width:100%; overflow-x:hidden; }
+
 body {
     overflow-x: hidden;
     width: 98.5%;
@@ -370,21 +372,6 @@ body.page-template {
 }
 
 /* MOBILE/SMALLER SCREEN STYLES */
-@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) { // iPad Pro styles
-    .hero-section {
-        .col-md-7 {
-            margin: 7.5% 2.5% !important;
-            
-            .hero-text {
-                p:first-of-type {
-                    line-height: 1.5 !important;
-                    padding: 25px !important;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: $mobile-size) {
     .top-bar {
         .col-md-6 {
@@ -399,6 +386,10 @@ body.page-template {
                 font-size: 0.75rem !important;
             }
         }
+    }
+    
+    .hero-section {
+        height: 550px !important;    
     }
 }
 

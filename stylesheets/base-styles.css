@@ -28,6 +28,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 /* VARIABLES */
 /* GENERAL STYLES */
+html { max-width: 100%; overflow-x: hidden; }
+
 body { overflow-x: hidden; width: 98.5%; margin: auto !important; }
 
 body .container { width: 100% !important; max-width: 100% !important; }
@@ -162,11 +164,9 @@ body.page-template #content .entry-content .row p { font-size: 1.15rem !importan
 body.page-template .footer { border-top: 1px dotted dimgray; }
 
 /* MOBILE/SMALLER SCREEN STYLES */
-@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) { .hero-section .col-md-7 { margin: 7.5% 2.5% !important; }
-  .hero-section .col-md-7 .hero-text p:first-of-type { line-height: 1.5 !important; padding: 25px !important; } }
-
 @media screen and (max-width: 767px) { .top-bar .col-md-6 .tb-info { float: unset !important; display: block; font-size: 0.95rem !important; }
-  .top-bar .col-md-6 .social-icons { float: unset !important; font-size: 0.75rem !important; } }
+  .top-bar .col-md-6 .social-icons { float: unset !important; font-size: 0.75rem !important; }
+  .hero-section { height: 550px !important; } }
 
 @media screen and (min-width: 768px) and (max-width: 936px) { .top-bar .col-md-6 .tb-info { font-size: 0.875rem !important; } }
 
