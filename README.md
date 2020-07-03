@@ -1,14 +1,14 @@
 # Baesick - Bootstrap/Skeleton WordPress Theme
 -------------------------------------
 
-This is a very minimal responsive [Bootstrap](https://getbootstrap.com/)-based WordPress starter theme forked from wycks' WP-Skeleton-Theme, which itself is based on [Skeleton](https://getskeleton.com).
+This is a minimal, responsive [Bootstrap](https://getbootstrap.com/)-based WordPress starter theme forked from wycks' WP-Skeleton-Theme, which itself is based on [Skeleton](https://getskeleton.com).
 
 ### Features:
 
 * Very Easy to customise.
 * Responsive Media Query Layout
-* Fairly small footprint: Entire theme is roughly 85kb
-* Very small load query, only 15-20 WordPress queries made to the DB by default.
+* Fairly average footprint: Entire theme is roughly 4.5 MB
+* Fairly small load query, only 15-20 WordPress queries made to the DB by default.
 * Bundled with full 960 based CSS Responsive Grid
 * Bootstrap, jQuery, and Font Awesome support, which can be easily removed from header.php
 * Easily customizable SCSS variables in base-styles.scss file.
@@ -23,7 +23,7 @@ This is a very minimal responsive [Bootstrap](https://getbootstrap.com/)-based W
 
 -------------------------------
 
-### What's is included:
+### What's included:
 
 *WordPress Menu support ( Drag & Drop)*
  - The menu floats right on the large sizes, then floats left on mobile.
